@@ -1,24 +1,21 @@
 import s from './Statistics.module.css';
 import StatisticsItem from './StatisticsItem';
 
-function StatisticsList({ data, title }) {
+function StatisticsList({ data }) {
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
-      <ul className={s.statList}>
-        {data.map((item, idx) => {
-          return (
-            <li
-              className={s.statItem}
-              key={item.id}
-              style={{ backgroundColor: `${getColor(idx)}` }}
-            >
-              <StatisticsItem label={item.label} percentage={item.percentage} />
-            </li>
-          );
-        })}
-      </ul>
-    </section>
+    <ul className={s.statList}>
+      {data.map((item, idx) => {
+        return (
+          <li
+            className={s.statItem}
+            key={item.id}
+            style={{ backgroundColor: `${getColor(idx)}` }}
+          >
+            <StatisticsItem label={item.label} percentage={item.percentage} />
+          </li>
+        );
+      })}
+    </ul>
   );
 }
 

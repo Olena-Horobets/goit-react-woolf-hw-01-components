@@ -1,0 +1,24 @@
+.transactionHistory {
+  border: 3px solid rgb(255, 255, 255);
+  border-collapse: collapse;
+  min-width: 80%;
+}
+
+.tableHead {
+  background-color: #2eafdf;
+  border: 3px solid rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 700;
+  color: #2e2e2e;
+  padding: 6px;
+}
+
+.tableRow:nth-child(2n + 2) {
+  background-color: #ffffff20;
+}
+
+.tableData {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  font-size: 15px;
+}
