@@ -30,9 +30,11 @@
   font-weight: 700;
 }
 
-/* .pieChart {
-  height: 260px;
-  width: 260px;
+.pieChart {
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
   box-shadow: var(--shadow);
-} */
+}
