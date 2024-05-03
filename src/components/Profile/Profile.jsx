@@ -4,7 +4,8 @@ const Profile = ({ user }) => {
   const { username, tag, location, avatar, stats } = user;
 
   return (
-    <div className={s.profile}>
+    <section className="profile">
+      <h2 className="title">My profile</h2>
       <div className={s.description}>
         <img src={avatar} alt="User avatar" className={s.avatar} />
         <p className={s.name}>{username}</p>
@@ -26,7 +27,7 @@ const Profile = ({ user }) => {
           <span className={s.quantity}>{stats.likes}</span>
         </li>
       </ul>
-    </div>
+    </section>
   );
 };
 
